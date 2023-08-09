@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
+    const otpInput = document.getElementById("otp");
+    const sendOTPButton = document.getElementById("send-otp-button");
     const loginButton = document.getElementById("login-button");
 
     // Enable the login button after a delay
@@ -8,16 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
         loginButton.removeAttribute("disabled");
     }, 60000);
 
-    // Simulate a basic verification process
+    // Simulate sending OTP
+    sendOTPButton.addEventListener("click", function() {
+        // Simulate sending OTP logic here
+        alert("OTP sent to your registered email/mobile.");
+    });
+
     loginButton.addEventListener("click", function() {
+        // Simulated verification logic
         const username = usernameInput.value;
         const password = passwordInput.value;
+        const otp = otpInput.value;
 
-        // Simulate a backend check (replace this with your actual backend logic)
-        if (username === "admin@sinh" && password === "admin@sinh") {
+        if (username === "user" && password === "pass" && otp === "12345678") {
             window.location.href = "welcome.html";
         } else {
-            alert("Invalid username or password. Please try again.");
+            alert("Invalid username, password, or OTP. Please try again.");
         }
     });
 });
