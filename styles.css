@@ -1,0 +1,41 @@
+/* Common styles for both pages */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styles for login page */
+#login-form {
+    margin-top: 150px;
+}
+
+#username, #password {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#login-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Styles for welcome page */
+h1, p {
+    margin-top: 150px;
+    color: #333;
+}
