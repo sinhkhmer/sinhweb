@@ -1,41 +1,47 @@
-/* Common styles for both pages */
+/* Common styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-/* Styles for login page */
-#login-form {
-    margin-top: 150px;
+/* Login page styles */
+.login-container {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#username, #password {
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#username,
+#password,
+#otp {
     width: 80%;
     padding: 10px;
-    margin: 10px auto;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+#send-otp-button,
 #login-button {
     background-color: #3498db;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
+    margin: 5px 0;
     cursor: pointer;
 }
 
 #login-button:disabled {
     background-color: #bdc3c7;
     cursor: not-allowed;
-}
-
-/* Styles for welcome page */
-h1, p {
-    margin-top: 150px;
-    color: #333;
 }
