@@ -1,36 +1,29 @@
-// Toggle password visibility
-const passwordInput = document.getElementById("pwd");
-const eyeIcon = document.getElementById("eye");
+    // Retrieve the remembered username from local storage
+    const rememberedUsername = localStorage.getItem("rememberedUsername");
+    if (rememberedUsername) {
+      document.getElementById("username").value = rememberedUsername;
+      document.getElementById("remember").checked = true;
+    }
 
-eyeIcon.addEventListener("click", function() {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    eyeIcon.classList.remove("fa-eye");
-    eyeIcon.classList.add("fa-eye-slash");
-  } else {
-    passwordInput.type = "password";
-    eyeIcon.classList.remove("fa-eye-slash");
-    eyeIcon.classList.add("fa-eye");
-  }
-});
+    document.getElementById("login").addEventListener("click", function() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
 
-// Handle login form submission
-document.getElementById("login-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const username = document.getElementById("txt-input").value;
-  const password = passwordInput.value;
+      // Replace these values with your actual login credentials
+      const validUsername = "your_valid_username";
+      const validPassword = "your_valid_password";
 
-  // Here you can perform your login validation logic using AJAX or fetch requests.
-  // For demonstration purposes, let's just display a message.
-  
-  if (username === "admin@sinh" && password === "admin@sinh") {
-    // Redirect to the welcome page on successful login
-    window.location.href = "welcome.html";
-  } else {
-    alert("Invalid credentials. Please try again.");
-  }
-});
-function restartWebsite() {
-  location.reload();
-}
+      if (username === validUsername && password === validPassword) {
+        // Save the username to local storage if "Remember Me" is checked
+        if (document.getElementById("remember").checked) {
+          localStorage.setItem("rememberedUsername", username);
+        } else {
+          localStorage.removeItem("rememberedUsername");
+        }
 
+        // Redirect to the welcome page on successful login
+        window.location.href = "welcome.html";
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    });
