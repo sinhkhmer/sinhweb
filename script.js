@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
   // Here you can perform your login validation logic using AJAX or fetch requests.
   // For demonstration purposes, let's just display a message.
   
-  if (username === "demo" && password === "password") {
+  if (username === "admin@sinh" && password === "admin@sinh") {
     // Redirect to the welcome page on successful login
     window.location.href = "welcome.html";
   } else {
