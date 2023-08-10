@@ -5,53 +5,29 @@
   <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <link rel="icon" href="https://img.freepik.com/premium-vector/hand-drawn-friends-logo-design_23-2149577865.jpg?w=360">
-  <title>Login</title>
+<title>Login Page</title>
+<style>
+/* Your existing styles */
+</style>
 </head>
 <body>
-  <div class="overlay">
-    <!-- LOGIN FORM by Omar Dsoky -->
-    <center>
-    <form id="login-form">
-      <!-- con = Container  for items in the form -->
-      <div class="con">
-        <!-- Start header Content -->
-        <header class="head-form">
-          <h3>ចូល គេហទំព័រ SINH</h3>
-          <br>
-           <br>
-          <p>ចូលនៅទីនេះដោយប្រើឈ្មោះអ្នកប្រើប្រាស់ និងពាក្យសម្ងាត់របស់ អ្នកគ្រប់គ្រង</p>
-        </header>
-        <!-- End header Content -->
-        <br>
-        <div class="field-set">
-          <!-- user name -->
-          <span class="input-item">
-            <i class="fa fa-user-circle"></i>
-          </span>
-          <!-- user name Input-->
-          <input class="form-input" id="txt-input" type="text" placeholder="ឈ្មោះ​អ្នកប្រើប្រាស់" required>
-          <br>
-          <!-- Password -->
-          <span class="input-item">
-            <i class="fa fa-key"></i>
-          </span>
-          <!-- Password Input-->
-          <input class="form-input" type="password" placeholder="ពាក្យសម្ងាត់" id="pwd" name="password" required>
-          <!-- Show/hide password -->
-          <span>
-            <i class="fa fa-eye" aria-hidden="true" type="button" id="eye">បង្ហាញ</i>
-          </span>
-          <br>
-          <!-- buttons -->
-          <!-- button LogIn -->
-          <button class="log-in" type="submit">ចូល</button>
-        </div>
-        <!-- End Container -->
-      </div>
-      <!-- End Form -->
-    </form>
+  <center> <h1 style="color:#ffffff">Welcome to Sinh</h1> </center>
+  <form id="login-form">
+    <center id="sinh" style="color:#ffffff">
+      SINH
     </center>
-  </div>
+    <div class="container">
+      <label>Username :</label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+      <label>Password :</label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+      <label for="remember">Remember me:</label>
+      <input type="checkbox" name="remember" id="remember">
+      <button id="login" type="button" class="loing"><h3>Login</h3></button>
+      <input type="checkbox" checked="checked"> Remember me
+      <button id="cancel" type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
   <script src="script.js"></script>
 </body>
 </html>
