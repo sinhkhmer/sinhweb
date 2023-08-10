@@ -1,10 +1,10 @@
-    document.getElementById("login").addEventListener("click", function() {
+document.getElementById("login").addEventListener("click", function() {
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
 
       // Replace these values with your actual login credentials
-      const validUsername = "admin@sinh";
-      const validPassword = "admin@sinh";
+      const validUsername = "admin";
+      const validPassword = "26166314";
 
       if (username === validUsername && password === validPassword) {
         // Redirect to the welcome page on successful login
@@ -13,6 +13,5 @@
         alert("ឈ្មោះអ្នកប្រើប្រាស់ ឬ ពាក្យសម្ងាត់មិនត្រឹមត្រូវ។ សូមព្យាយាមម្តងទៀត។");
       }
     });
-function restartWebsite() {
   location.reload();
 }
