@@ -10,8 +10,8 @@
       const password = document.getElementById("password").value;
 
       // Replace these values with your actual login credentials
-      const validUsername = "your_valid_username";
-      const validPassword = "your_valid_password";
+      const validUsername = "admin@sinh";
+      const validPassword = "admin@sinh";
 
       if (username === validUsername && password === validPassword) {
         // Save the username to local storage if "Remember Me" is checked
