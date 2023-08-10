@@ -30,3 +30,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     alert("Invalid credentials. Please try again.");
   }
 });
+function restartWebsite() {
+  location.reload();
+}
+
