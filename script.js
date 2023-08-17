@@ -13,5 +13,3 @@ document.getElementById("login").addEventListener("click", function() {
         alert("ឈ្មោះអ្នកប្រើប្រាស់ ឬ ពាក្យសម្ងាត់មិនត្រឹមត្រូវ។ សូមព្យាយាមម្តងទៀត។");
       }
     });
-  location.reload();
-}
