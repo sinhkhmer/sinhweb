@@ -8,7 +8,7 @@ loginForm.addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
     
     // Perform your login validation here
-    if (username === 'sinh' && password === 'sinh') {
+    if (username === 'sinh@123' && password === '14326182009202101001') {
                 // Redirect to the welcome page on successful login
         window.location.href = 'welcome.html';
     } else {
